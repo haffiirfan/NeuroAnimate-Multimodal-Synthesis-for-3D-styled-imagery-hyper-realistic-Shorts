@@ -6,7 +6,7 @@ Due to the heavy hardware requirements of running 60.1 GB of heterogeneous model
 
 ## Overview
 
-Deploying complex, multi-model AI pipelines usually requires high-end, server-grade GPUs. OrchestraGen solves this by implementing **Dynamic Memory Orchestration (DMO)**—a scheduling discipline that allows multiple heavy models to execute sequentially within a memory-constrained address space. 
+Deploying complex, multi-model AI pipelines usually requires high-end, server-grade GPUs. OrchestraGen solves this by implementing **Dynamic Memory Orchestration (DMO)**, a scheduling discipline that allows multiple heavy models to execute sequentially within a memory-constrained address space. 
 
 By utilizing strict VRAM reclamation and heterogeneous CPU-GPU scheduling, the pipeline achieves a 1.88× memory scaling factor, maintaining peak single-GPU occupancy at just 13.8 GB.
 
