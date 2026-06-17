@@ -1,6 +1,6 @@
-# OrchestraGen: Multi-Model Pipeline for Text-to-Avatar Synthesis
+# NeuroAnimate: Multimodal Synthesis for 3D-styled imagery & hyper-realistic Shorts
 
-This repository contains the official implementation of **OrchestraGen**, a memory-orchestrated pipeline that transforms textual prompts into fully animated portrait videos.
+This repository contains the official implementation of **NeuroAnimate**, a memory-orchestrated pipeline that transforms textual prompts into fully animated portrait videos.
 
 Due to the heavy hardware requirements of running 60.1 GB of heterogeneous models, the codebase is provided as a Kaggle Notebook (`.ipynb`), which is configured to run on a dual-T4 GPU environment (32 GB total VRAM).
 
@@ -22,21 +22,9 @@ By utilizing strict VRAM reclamation and heterogeneous CPU-GPU scheduling, the p
 The entire pipeline is self-contained in a single Kaggle notebook. 
 
 1. Create a [Kaggle](https://www.kaggle.com/) account if you don't have one.
-2. Upload `OrchestraGen_Pipeline.ipynb` as a new Notebook in Kaggle.
+2. Upload `NeuroAnimate.ipynb` as a new Notebook in Kaggle.
 3. In the right-hand panel, set the **Accelerator** to **GPU T4 x2**.
 4. Run the cells sequentially. The notebook will automatically download the required model weights (approx. 60.1 GB) from HuggingFace directly into the Kaggle environment.
 
 *Note: Do not run this on a local machine unless you have at least 32 GB of VRAM and are comfortable manually configuring environment variables for dual-GPU execution.*
 
-## Citation
-
-If you find this code useful in your research, please consider citing our paper (currently under review at *Multimedia Systems*):
-
-```bibtex
-@article{irfan2026orchestragen,
-  title={OrchestraGen: A Unified Memory-Orchestrated Multi-Model Pipeline for Text-to-Avatar Synthesis},
-  author={Irfan, H. and [Co-authors]},
-  journal={Multimedia Systems},
-  year={2026},
-  note={Under Review}
-}
