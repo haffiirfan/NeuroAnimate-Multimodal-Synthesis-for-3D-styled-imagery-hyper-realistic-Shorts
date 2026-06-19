@@ -26,5 +26,5 @@ The entire pipeline is self-contained in a single Kaggle notebook.
 3. In the right-hand panel, set the **Accelerator** to **GPU T4 x2**.
 4. Run the cells sequentially. The notebook will automatically download the required model weights (approx. 60.1 GB) from HuggingFace directly into the Kaggle environment.
 
-*Note: Do not run this on a local machine unless you have at least 32 GB of VRAM and are comfortable manually configuring environment variables for dual-GPU execution.*
+*Note: Do not run this on a local machine unless you have a T4x2 GPU environment variables for dual-GPU execution in Kaggle.*
 
