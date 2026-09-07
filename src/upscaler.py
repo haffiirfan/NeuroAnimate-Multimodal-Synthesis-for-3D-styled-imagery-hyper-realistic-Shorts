@@ -1,22 +1,3 @@
-"""
-Real-ESRGAN Super-Resolution Module — Dual-GPU Upscaling
-
-Upscales the composited video by 1.5× using a custom implementation of
-the RRDBNet (Residual-in-Residual Dense Block Network) architecture,
-split across two NVIDIA T4 GPUs for parallel frame processing.
-
-Architecture:
-    Each GPU runs an independent ESRGAN worker process. The input frames
-    are split in half: GPU 0 processes the first half, GPU 1 processes
-    the second half. An auto-batch-size calculator estimates the optimal
-    batch size based on frame resolution and target VRAM budget.
-
-OrchestraGen Note:
-    This is the final stage of the pipeline. Both GPUs are available
-    because LivePortrait (GPU 0) and the body animator (CPU) have already
-    completed and their VRAM has been cleared.
-"""
-
 import os
 import sys
 import json
