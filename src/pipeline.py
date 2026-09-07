@@ -1,26 +1,3 @@
-"""
-NeuroAnimate Pipeline — Master Orchestrator
-
-Coordinates the full six-model pipeline using Dynamic Memory Orchestration (DMO):
-
-    1. Prompt Enhancement  → Mistral 7B (GPU 1)
-    2. Image Generation    → SDXL Base (GPU 0) + Refiner (GPU 1)
-    3. Video Normalisation → FFmpeg (CPU)
-    4. Face Animation      → LivePortrait (GPU 0)  ┐  parallel
-       Body Animation      → Procedural 2D (CPU)   ┘
-    5. Compositing         → Shoulder-split blend (CPU)
-    6. Super-Resolution    → Real-ESRGAN (GPU 0 + GPU 1)
-
-Peak VRAM usage never exceeds 14.5 GB on any single GPU, despite the
-total model weight exceeding 60 GB, thanks to explicit sequential
-loading, inference, and teardown managed by the memory_orchestrator module.
-
-Reference:
-    Irfan, H. (2026). OrchestraGen: Memory-Orchestrated Multimodal Synthesis
-    for 3D-Styled Imagery & Hyper-Realistic Portrait Animation.
-    Multimedia Systems (MMSJ), Springer Nature. [Under Review]
-"""
-
 import os
 import glob
 import time
