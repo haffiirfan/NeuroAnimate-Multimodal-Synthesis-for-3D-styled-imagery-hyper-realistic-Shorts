@@ -9,12 +9,6 @@ import subprocess
 import torch
 from .compositor import ffprobe_info
 
-
-# ── ESRGAN Worker Script ──
-# This script is written to a temporary file and executed as a subprocess
-# on each GPU. It contains the full RRDBNet model definition to avoid
-# importing heavy dependencies in the main process.
-
 ESRGAN_WORKER_CODE = '''
 import sys, os, json, cv2, numpy as np, torch, torch.nn as nn, torch.nn.functional as F
 
