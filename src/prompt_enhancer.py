@@ -3,9 +3,6 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from .memory_orchestrator import clear_gpu
 
-
-# ── System Prompts for Each Creative Mode ───
-
 system_prompt_photorealism = (
                 "You are an SDXL 1.0 prompt engineer for photorealistic ultra detailed images. "
                 "Enhance the user prompt into ~52–68 tokens. "
