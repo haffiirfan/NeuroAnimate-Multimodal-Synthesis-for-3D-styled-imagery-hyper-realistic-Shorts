@@ -1,6 +1,6 @@
 #  NeuroAnimate | OrchestraGen Pipeline
 
-### Memory-Orchestrated Multimodal Synthesis for 3D-Styled Imagery & Hyper-Realistic Portrait Animation
+### Memory-Orchestrated Multimodal Synthesis for 3D-Styled Imagery & Hyper-Realistic Shorts
 
 [![Paper](https://img.shields.io/badge/Paper-Springer%20Nature%20MMSJ-blue)](https://www.springer.com/journal/530)
 [![Python](https://img.shields.io/badge/Python-3.10-green)](https://python.org)
