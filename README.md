@@ -168,7 +168,7 @@ print(status)
 | 4 | [LivePortrait](https://github.com/KwaiVGI/LivePortrait) | — | 2.1 GB | Facial motion transfer |
 | 5 | InsightFace | — | 0.5 GB | Face detection & alignment |
 | 6 | [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) | 16.7M | 12.3 x 2 GB | 1.5× super-resolution |
-| | **Total** | | **~60.1 GB** | **(but only 14.5 GB peak with DMO)** |
+| | **Total** | | **~60.1 GB** | **(but only 13.1 GB peak with DMO)** |
 
 ---
 
